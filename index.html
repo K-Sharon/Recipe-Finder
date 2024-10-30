@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="containerSrc">
+        <h1>Discover Recipe</h1>
+    <div class="search-bar">
+        <input type="text"class="input" placeholder="Search...">
+        <button type="submit" class="search-button" onclick="showContent()">
+            <span class="search-icon"><i class="fa fa-search"></i></span>
+        </button>
+    </div>
+    </div>
+    
+    
+    <div class="container" id="container1">
+        
+        <!-- Search bar section -->
+        
+        <h2>Try some famous Recipes...</h2>
+        <div class="content">
+            <div class="boxes">
+                <a href="#" onclick="callChi()"><img src="chicken.jpg" alt="chicken img"></a>
+                <p id="Ename">Chicken</p>
+            </div>
+
+            <div class="boxes">
+                <a href="#" onclick="callPot()"><img src="potato.jpg" alt="potatoe img" ></a>
+                <p id="Ename">Potatoes</p>
+            </div>
+            <div class="boxes">
+                <a href="#" onclick="callEgg()"><img src="eggs.jpeg" alt="eggs img"></a>
+                <p id="Ename">Eggs</p>
+            </div>
+            <div class="boxes">
+                <a href="#" onclick="callCak()"><img src="cake.jpg" alt="cake img"></a>
+                <p id="Ename">Cakes</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container" id="container2">
+
+        
+        <!---For Recipe instruction-->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close-btn">&times;</a>
+                <h1>INSTRUCTIONS:</h1>
+                <p id="recipe-instructions" class="ingredients">Click a recipe to view instructions.</p>
+            </div>
+        </div>
+
+        <!-- Item section with image, content, and button -->
+        <div class="item">
+            <div class="left-section">
+                <div class="box image-box">
+                    <img id="meal-image-1" src="1550441882.jpg" alt="">
+                </div>
+                <a href="#popup"><button id="meal-button-1" class="item-button">Recipe</button></a>
+            </div>
+            <div class="box content-box">
+                <div id="meal-name-1" class="Mname"></div>
+            <!-- Add a container for ingredients -->
+            <p id="meal-ingredients-1" class="ingredients"></p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="left-section">
+                <div class="box image-box">
+                    <img id="meal-image-2" src="1550441882.jpg" alt="">
+                </div>
+                <a href="#popup"><button id="meal-button-2" class="item-button">Recipe</button></a>
+            </div>
+            <div class="box content-box">
+                <div id="meal-name-2" class="Mname"></div>
+            <!-- Add a container for ingredients -->
+            <p id="meal-ingredients-2" class="ingredients"></p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="left-section">
+                <div class="box image-box">
+                    <img id="meal-image-3" src="1550441882.jpg" alt="">
+                </div>
+                <a href="#popup"><button id="meal-button-3" class="item-button">Recipe</button></a>
+            </div>
+            <div class="box content-box">
+                <div id="meal-name-3" class="Mname"></div>
+            <!-- Add a container for ingredients -->
+            <p id="meal-ingredients-3" class="ingredients"></p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="left-section">
+                <div class="box image-box">
+                    <img id="meal-image-4" src="1550441882.jpg" alt="">
+                </div>
+                <a href="#popup"><button id="meal-button-4" class="item-button">Recipe</button></a>
+            </div>
+            <div class="box content-box">
+                <div id="meal-name-4" class="Mname"></div>
+            <!-- Add a container for ingredients -->
+            <p id="meal-ingredients-4" class="ingredients"></p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="left-section">
+                <div class="box image-box">
+                    <img id="meal-image-5" src="1550441882.jpg" alt="">
+                </div>
+                <a href="#popup"><button id="meal-button-5" class="item-button">Recipe</button></a>
+            </div>
+            <div class="box content-box">
+                <div id="meal-name-5" class="Mname"></div>
+            <!-- Add a container for ingredients -->
+            <p id="meal-ingredients-5" class="ingredients"></p>
+            </div>
+        </div>
+        <!--Home button-->
+        <button class="btn_home" onclick="HideContent()">Home</button>
+            
+    </div>
+
+        
+
+    <script src="app.js"></script>
+</body>
+</html>
